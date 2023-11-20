@@ -34,6 +34,6 @@ void _div(stack_t **stack, unsigned int line_number)
 		fprintf(stderr, "L%u: division by zero\n", line_number);
 		exit(EXIT_FAILURE);
 	}
-	f_pop(stack, line_number);
+	_pop(stack, line_number);
 	(*stack)->n /= temp_variable;
 }
